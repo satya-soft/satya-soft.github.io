@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Technology Consultancy</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Work Sans", "sans-serif"],
+                        },
+                        colors: {
+                            sky: {
+                                50: "#f0f9ff",
+                                100: "#e0f2fe",
+                                200: "#bae6fd",
+                                300: "#7dd3fc",
+                                400: "#38bdf8",
+                                500: "#0ea5e9",
+                                600: "#0284c7",
+                                700: "#0369a1",
+                                800: "#075985",
+                                900: "#0c4a6e",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            @keyframes gradient-animation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+
+
+
+
+
+
+
+                    </head>
+    <body id="top" class="bg-sky-50 font-sans">
+                        <nav
+                            class="py-4 flex justify-between items-center sticky top-0 z-40 bg-sky-600 text-white"
+                        >
+                            <div class="container mx-auto px-6 flex justify-between items-center">
+                                            <div class="text-3xl font-bold text-white">
+                                                <a href="#top">Satyasoft Solutions</a>
+                                            </div>
+
+                                            <!-- Mobile menu button -->
+                                            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                                </svg>
+                                            </button>
+
+                                            <!-- Navigation links -->
+                                            <div id="main-navigation" class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg absolute md:relative top-full left-0 w-full md:w-auto bg-sky-600 md:bg-transparent p-6 md:p-0 shadow-lg md:shadow-none">
+                                                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg">
+                                                    <li>
+                                                        <a href="#top" class="block text-white hover:text-sky-200 py-2 md:py-0"
+                                                            >Home</a
+                                                        >
+                                                    </li>
+                                                    <li class="group relative">
+                                                        <a href="#services" class="block text-white hover:text-sky-200 py-2 md:py-0"
+                                                            >Services</a
+                                                        >
+                                        <div
+                                            class="hidden bg-sky-50 shadow-lg transition-all duration-300 z-50
+                                                   md:block md:fixed md:top-16 md:inset-x-0
+                                                   md:opacity-0 md:invisible md:group-hover:opacity-100 md:group-hover:visible"
+                                            id="services-mega-menu"
+                                        >
+                                            <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                                                <div>
+                                                    <div class="space-y-8">
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                Web Development
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Frontend Development</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Backend Development</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Full-Stack Development</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                IT Consulting
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Strategic Planning</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Digital Transformation</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Technology Roadmaps</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="space-y-8">
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                Cloud Solutions
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >AWS</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Azure</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Google Cloud</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                Cybersecurity
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Threat Assessment</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Penetration Testing</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Security Audits</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="space-y-8">
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                Data Analytics
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Data Warehousing</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Business Intelligence</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Machine Learning</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <h3
+                                                                class="font-bold text-sky-600 text-lg mb-2"
+                                                            >
+                                                                UI/UX Design
+                                                            </h3>
+                                                            <ul class="space-y-2 text-sm">
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >User Research</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Wireframing &
+                                                                        Prototyping</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                                        >Interactive Design</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#about" class="block text-white hover:text-sky-200 py-2 md:py-0"
+                                                            >About Us</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#contact" class="block text-white hover:text-sky-200 py-2 md:py-0"
+                                                            >Contact</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                            </div>            </nav>
+
+
+        <main>
+            <section class="bg-gradient-to-r from-sky-600 to-sky-700 text-white min-h-[calc(100vh-4rem)] flex items-center justify-center"
+                     style="background-size: 200% 200%; animation: gradient-animation 10s ease infinite;">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-5xl font-bold mb-4">
+                        Ready to Transform Your Business?
+                    </h2>
+                    <p class="text-xl mb-10">
+                        Let our team of experts help you leverage technology to
+                        achieve your goals.
+                    </p>
+                    <a
+                        href="#contact"
+                        class="bg-white text-sky-600 font-bold py-4 px-8 rounded-full text-lg hover:bg-sky-100 transition-colors"
+                        >Get in Touch</a
+                    >
+                </div>
+            </section>
+            <section id="services" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <h2
+                        class="text-4xl font-bold text-center text-gray-800 mb-12"
+                    >
+                        Our Services
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+                    >
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                Web Development
+                            </h3>
+                            <p class="text-gray-600">
+                                High-performance websites and applications with
+                                a seamless user experience.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 15a4 4 0 004 4h9a5 5 0 00-1.294-9.67l-.234-.11C15.714 4.542 14.28 3 12 3c-1.572 0-3.003.743-3.95 1.964L7.527 6H7a6 6 0 000 12z"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                Cloud Solutions
+                            </h3>
+                            <p class="text-gray-600">
+                                Scalable and secure infrastructure on AWS,
+                                Azure, and Google Cloud.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                Data Analytics
+                            </h3>
+                            <p class="text-gray-600">
+                                Business intelligence and machine learning
+                                solutions for data-driven decisions.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9.663 17h4.673M12 10v6m5-6a5 5 0 01-10 0V5a5 5 0 0110 0v5z"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                IT Consulting
+                            </h3>
+                            <p class="text-gray-600">
+                                Strategic guidance and planning for your digital
+                                transformation journey.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-4a2 2 0 00-2-2H6a2 2 0 00-2 2v4a2 2 0 002 2zm0-11V6a4 4 0 014-4h2a4 4 0 014 4v3"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                Cybersecurity
+                            </h3>
+                            <p class="text-gray-600">
+                                Protecting your digital assets with threat
+                                assessments, testing, and audits.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-sky-50 p-8 text-center shadow-md rounded-lg max-w-md"
+                        >
+                                <svg
+                                    class="h-10 w-10 mx-auto"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9.75 17L12 20l2.25-3M12 13V4M2 10h20"
+                                    ></path>
+                                </svg>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                UI/UX Design
+                            </h3>
+                            <p class="text-gray-600">
+                                Creating intuitive and beautiful user interfaces
+                                through research and prototyping.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-20 bg-white">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-12">
+                        About Us
+                    </h2>
+                    <div class="bg-sky-50 p-8 rounded-lg shadow-md">
+                        <p
+                            class="text-lg text-gray-600 leading-relaxed mb-4"
+                        >
+                            TechConsult is a leading technology consultancy
+                            firm dedicated to helping businesses navigate the
+                            complexities of the digital world. Our team of experts
+                            is committed to delivering innovative solutions that
+                            drive growth and efficiency. We specialize in
+                            providing cutting-edge technology strategies and
+                            implementations tailored to your unique business needs.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            With years of experience across various industries,
+                            we pride ourselves on delivering measurable results
+                            and fostering long-term partnerships. Our approach
+                            combines deep technical expertise with a clear
+                            understanding of business objectives, ensuring that
+                            technology serves as a true enabler for your success.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-white">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                    Testimonials
+                </h2>
+                <div
+                    class="container mx-auto px-6 flex justify-center gap-10 flex-wrap"
+                >
+                    <div class="bg-sky-50 p-8 rounded-lg shadow-md max-w-md">
+                        <p class="text-gray-600 mb-6 text-lg">
+                            "TechConsult provided excellent service and
+                            helped us achieve our goals. Their team is highly
+                            skilled and professional."
+                        </p>
+                        <h4 class="font-bold text-sky-600">
+                            - John Doe, CEO of Company A
+                        </h4>
+                    </div>
+                    <div class="bg-sky-50 p-8 rounded-lg shadow-md max-w-md">
+                        <p class="text-gray-600 mb-6 text-lg">
+                            "We are extremely satisfied with the results. The
+                            team at TechConsult is dedicated and
+                            delivered beyond our expectations."
+                        </p>
+                        <h4 class="font-bold text-sky-600">
+                            - Jane Smith, CTO of Company B
+                        </h4>
+                    </div>
+                    <div class="bg-sky-50 p-8 rounded-lg shadow-md max-w-md">
+                        <p class="text-gray-600 mb-6 text-lg">
+                            "Working with TechConsult was a great
+                            experience. They are true partners and we highly
+                            recommend their services."
+                        </p>
+                        <h4 class="font-bold text-sky-600">
+                            - Peter Jones, COO of Company C
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20">
+                <div class="container mx-auto px-6">
+                    <h2
+                        class="text-4xl font-bold text-center text-gray-800 mb-12"
+                    >
+                        Contact Us
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-5xl"
+                    >
+                        <div>
+                            <form class="bg-white p-10 rounded-lg shadow-xl">
+                                <div class="mb-6">
+                                    <label
+                                        class="block text-gray-700 text-sm font-bold mb-2"
+                                        for="name"
+                                    >
+                                        Name
+                                    </label>
+                                    <input
+                                        class="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="name"
+                                        type="text"
+                                        placeholder="Your Name"
+                                    />
+                                </div>
+                                <div class="mb-6">
+                                    <label
+                                        class="block text-gray-700 text-sm font-bold mb-2"
+                                        for="email"
+                                    >
+                                        Email
+                                    </label>
+                                    <input
+                                        class="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="email"
+                                        type="email"
+                                        placeholder="Your Email"
+                                    />
+                                </div>
+                                <div class="mb-8">
+                                    <label
+                                        class="block text-gray-700 text-sm font-bold mb-2"
+                                        for="message"
+                                    >
+                                        Message
+                                    </label>
+                                    <textarea
+                                        class="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="message"
+                                        rows="6"
+                                        placeholder="Your Message"
+                                    ></textarea>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <button
+                                        class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline text-lg"
+                                        type="submit"
+                                    >
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="bg-white p-10 rounded-lg shadow-xl h-full">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                                    Our Office
+                                </h3>
+                                <p class="text-gray-600 mb-2">
+                                    925 S COUNTRY CLUB DR, STE 4
+                                </p>
+                                <p class="text-gray-600 mb-2">
+                                    Jefferson City, MO 65109
+                                </p>
+                                <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">
+                                    Contact Details
+                                </h3>
+                                <p class="text-gray-600 mb-2">
+                                    Email: info@satyass.com
+                                </p>
+                                <p class="text-gray-600 mb-2">
+                                    Phone: +1 573 321 3030
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-10">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2025 TechConsult. All Rights Reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="hover:text-sky-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-sky-400">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
