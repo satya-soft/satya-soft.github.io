@@ -1,13 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Contact Form Submission
-    const contactForm = document.querySelector("#contact form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
-            alert("Form submitted! (This is a placeholder action)");
-            // Add actual form submission logic here
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const response = await fetch("https://formspree.io/f/xgowwpgj", {
+            method: "POST",
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
         });
-    }
+
+        if (response.ok) {
+            status.textContent = "Message sent successfully!";
+            form.reset();
+        } else {
+            status.textContent = "Oops! Something went wrong. Please try again";
+        }
+    });
 
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById("mobile-menu-button");
