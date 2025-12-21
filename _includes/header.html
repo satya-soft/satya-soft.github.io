@@ -1,0 +1,271 @@
+<nav
+    class="py-4 flex justify-between items-center sticky top-0 z-40 bg-sky-600 text-white"
+>
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="text-3xl font-bold text-white">
+            <a href="{{ '/' | relative_url }}#top">Satya Soft Solutions</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+            id="mobile-menu-button"
+            class="md:hidden text-white focus:outline-none"
+        >
+            <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+            </svg>
+        </button>
+
+        <!-- Navigation links -->
+        <div
+            id="main-navigation"
+            class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg absolute md:relative top-full left-0 w-full md:w-auto bg-sky-600 md:bg-transparent p-6 md:p-0 shadow-lg md:shadow-none"
+        >
+            <ul
+                class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg"
+            >
+                <li class="group relative">
+                    <a
+                        href="{{ '/' | relative_url }}#services"
+                        class="block text-white hover:text-sky-200 py-2 md:py-0"
+                        >Services</a
+                    >
+                    <div
+                        class="hidden bg-sky-50 shadow-lg transition-all duration-300 z-50 md:block md:fixed md:top-16 md:inset-x-0 md:opacity-0 md:invisible md:group-hover:opacity-100 md:group-hover:visible"
+                        id="services-mega-menu"
+                    >
+                        <div
+                            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-8"
+                        >
+                            <div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            Web Development
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/frontend-development.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Frontend Development</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/backend-development.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Backend Development</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/full-stack-development.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Full-Stack Development</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            IT Consulting
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/strategic-planning.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Strategic Planning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/digital-transformation.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Digital Transformation</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/technology-roadmaps.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Technology Roadmaps</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            Cloud Solutions
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/aws-cloud.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >AWS</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/azure-cloud.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Azure</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/google-cloud.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Google Cloud</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            Cybersecurity
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/threat-assessment.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Threat Assessment</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/penetration-testing.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Penetration Testing</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/security-audits.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Security Audits</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            Data Analytics
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/data-warehousing.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Data Warehousing</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/business-intelligence.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Business Intelligence</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/machine-learning.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Machine Learning</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-bold text-sky-600 text-lg mb-2"
+                                        >
+                                            UI/UX Design
+                                        </h3>
+                                        <ul class="space-y-2 text-sm">
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/user-research.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >User Research</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/wireframing-prototyping.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Wireframing &
+                                                    Prototyping</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{{ '/services/interactive-design.html' | relative_url }}"
+                                                    class="block p-2 -mx-2 rounded-md text-gray-700 hover:bg-sky-100"
+                                                    >Interactive Design</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a
+                        href="{{ '/' | relative_url }}#about"
+                        class="block text-white hover:text-sky-200 py-2 md:py-0"
+                        >About Us</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="{{ '/' | relative_url }}#contact"
+                        class="block text-white hover:text-sky-200 py-2 md:py-0"
+                        >Contact</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="{{ '/careers.html' | relative_url }}"
+                        class="block text-white hover:text-sky-200 py-2 md:py-0"
+                        >Careers</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

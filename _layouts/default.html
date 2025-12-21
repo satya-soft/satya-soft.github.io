@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body id="top" class="bg-sky-50 font-sans">
+        {% include header.html %}
+
+        <main>{{ content }}</main>
+
+        {% include footer.html %}
+
+        <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    </body>
+</html>

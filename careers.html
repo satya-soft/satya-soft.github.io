@@ -1,0 +1,64 @@
+---
+layout: default
+title: Careers
+---
+
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h2
+                class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+                Join Our Team
+            </h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">
+                We are always looking for talented individuals to help us build
+                the future of technology.
+            </p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+                {% for job in site.jobs %}
+                <article
+                    class="flex flex-col items-start justify-between bg-sky-50 p-8 rounded-lg shadow-sm hover:shadow-md transition"
+                >
+                    <div class="flex items-center gap-x-4 text-xs">
+                        <time
+                            datetime="{{ job.date | date_to_xmlschema }}"
+                            class="text-gray-500"
+                            >{{ job.date | date: "%b %d, %Y" }}</time
+                        >
+                        <span
+                            class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                            >{{ job.department }}</span
+                        >
+                    </div>
+                    <div class="group relative">
+                        <h3
+                            class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+                        >
+                            <a href="{{ job.url | relative_url }}">
+                                <span class="absolute inset-0"></span>
+                                {{ job.title }}
+                            </a>
+                        </h3>
+                        <p
+                            class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600"
+                        >
+                            {{ job.description | default: job.excerpt }}
+                        </p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                        <a
+                            href="{{ job.url | relative_url }}"
+                            class="text-sm font-semibold leading-6 text-sky-600 hover:text-sky-500"
+                        >
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
