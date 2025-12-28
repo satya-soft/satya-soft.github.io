@@ -11,7 +11,8 @@ layout: default
                 {{ page.title }}
             </h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">
-                {{ page.department }} &middot; {{ page.location }}
+                {{ page.department }} &middot; {{ page.location }} &middot;
+                Posted on {{ page.date | date_to_string }}
             </p>
         </div>
         <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
