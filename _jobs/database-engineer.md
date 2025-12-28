@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Database Engineer
-location: Remote
+location: Jeff City, MO
 department: Engineering
 date: 2025-10-20
 description: Satya Soft looking for persuasive Database Engineer to promote their EHR / EMR Healthcare system.
