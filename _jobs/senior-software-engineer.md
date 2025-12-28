@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Senior Software Engineer
-location: Remote
+location: Jeff City, MO
 department: Engineering
 date: 2025-10-12
 description: We are seeking a Senior Software Engineer with expertise in full-stack development to lead our core product team.
