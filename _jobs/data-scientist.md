@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Data Scientist
-location: New York, NY
+location: Jeff City, MO
 department: Analytics
 date: 2025-12-28
 description: Join our analytics team to uncover insights and build predictive models that drive business value for our clients.
